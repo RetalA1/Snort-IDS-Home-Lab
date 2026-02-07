@@ -65,5 +65,6 @@ The final stats confirm a 100% detection rate for the simulated threats. This su
 * **Protocol Distribution:** Validates that Snort was monitoring across TCP, UDP, ICMP, and IP layers.
 This shows the rule engine successfully processed thousands of rules without system faults.
 
-**Takeaways & Conclusions**:
+
+## **Takeaways & Conclusions**:
 I successfully transitioned from using default rules to authoring custom logic for detecting complex exploits like EternalBlue, ensuring detection with minimal false positives and I gained hands on experience in Network Security Monitoring (NSM) by correlating IDS alerts with low-level packet data to map out and analyze the full lifecycle of an attack.
