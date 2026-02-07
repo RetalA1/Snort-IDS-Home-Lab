@@ -20,7 +20,7 @@ This lab, using Snort, simulates a real world defense environment in which custo
 ## Snort/System Architecture:
 To understand how the IDS operates, I deployed Snort as a dedicated sensor to monitor virtual network traffic with the objective of following a standard Network Security Monitoring (NSM) model. This pipeline captures traffic, decodes protocols and passes them through custom rule sets that identify malicious patterns and alert them in real time.
 
-![Snort Initialization](Snort initialization.png)
+![Snort Architecture](snort%20architecture.jpg)
 
 
 ## Phase 1: Configuration &  Initialization
@@ -30,4 +30,4 @@ I developed a customized configuration file, snort-lab.conf, to define the speci
 
 **Engine Stability:** Confirmed the parser successfully defined $HTTP_PORTS, $SSH_PORTS, and $FTP_PORTS.
 
-![Snort Initialization](Snort initialization.png)
+![Snort Initialization](Snort%20initialization.png)
