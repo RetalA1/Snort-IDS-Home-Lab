@@ -26,9 +26,8 @@ To understand how the IDS operates, I deployed Snort as a dedicated sensor to mo
 ## Phase 1: Configuration &  Initialization
 I developed a customized configuration file, 'snort-lab.conf', to define the specific network variables ($HOME_NET vs $EXTERNAL_NET) and port groups for this environment. 
 
-**Initialization**: Successfully loaded *4,062 total rules* with *3,388 specialized detection rules* active for real-time monitoring.
-
-**Engine Stability:** Confirmed the parser successfully defined $HTTP_PORTS, $SSH_PORTS, and $FTP_PORTS.
+**Initialization**: Confirmed that all specialized variables were successfully defined & verified that all custom local.rules and community signatures were correctly parsed
+($HTTP_PORTS, $SSH_PORTS, and $FTP_PORTS)
 
 ![Snort Initialization](Snort%20initialization.png)
 
@@ -63,8 +62,8 @@ The final stats confirm a 100% detection rate for the simulated threats. This su
 **Metrics:**
 * **Alerts & Logged:** Confirms the total number of malicious events captured during the simulation.
 * **Protocol Distribution:** Validates that Snort was monitoring across TCP, UDP, ICMP, and IP layers.
-This shows the rule engine successfully processed thousands of rules without system faults.
-
+Showing successfully processed rules without system faults.
+* **Rule Inspection**: The IDS successfully processed 4,062 total rules, with 3,388 specialized detection rules checking every packet for malicious patterns.
 
 ## **Takeaways & Conclusions**:
 I successfully transitioned from using default rules to authoring custom logic for detecting complex exploits like EternalBlue, ensuring detection with minimal false positives and I gained hands on experience in Network Security Monitoring (NSM) by correlating IDS alerts with low-level packet data to map out and analyze the full lifecycle of an attack.
